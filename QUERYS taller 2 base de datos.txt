@@ -1,0 +1,25 @@
+CREATE DABATASE sistemaVentasDB;
+
+USE sistemaVentasDB;
+
+CREATE TABLE if not exists Cliente(
+rut VARCHAR(10) PRIMARY KEY NOT NULL,
+nombre VARCHAR(20), 
+direccion VARCHAR(30), 
+telefono_domicilio INT,
+telefono_movil INT);
+
+CREATE TABLE if not exists Cliente(
+numero_reserva INT PRIMARY KEY NOT NULL,
+fecha_inicio DATE,
+fecha_final DATE,
+precio_total INT);
+
+CREATE TABLE if not exists Vehiculo(
+patente VARCHAR(10) PRIMARY KEY NOT NULL,
+numero_motor INT,
+modelo VARCHAR(20),
+color VARCHAR(15),
+marca VARCHAR(15),
+precio_diario INT);
+
